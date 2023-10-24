@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "nektarin";
+  src: url("./assets/font/nektarin.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: #26264f !important;
+  color: white !important;
+  font-family: "nektarin", sans-serif !important;
+  letter-spacing: 1px;
+}
+.App {
+  display: grid;
+  height: 100vh;
+  grid-auto-rows: auto 1fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+.content {
+  margin: 20px 10px;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /*   make sure to make the parent container as overflow scrollable (try commenting this property and check the result for better understanding 😉) */
+  overflow-y: hidden;
+}
+.colorIcons {
+  filter: invert(29%) sepia(7%) saturate(4802%) hue-rotate(203deg)
+    brightness(95%) contrast(88%);
+}
+/* General CSS */
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+.errmsg {
+  background-color: lightpink;
+  color: firebrick !important;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 10px !important;
+  text-align: center;
+  font-family: sans-serif;
+}
+.successmsg {
+  background-color: lightgreen;
+  color: rgb(56, 93, 0) !important;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 10px !important;
+  text-align: center;
+  font-family: sans-serif;
+}
+/* BUTTON CSS */
+.btnW {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+.btnW:hover,
+.btnW:focus {
+  background-color: #07c;
+}
+
+.btnW:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.btnW:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+.btnW:disabled {
+  background-color: #ccc !important;
+  cursor: not-allowed;
+}
+
+.btnW.green {
+  background-color: #1bbd10;
+}
+.btnW.green:hover,
+.btnW.green:focus {
+  background-color: rgb(0, 145, 0);
+}
+.btnW.green:active {
+  background-color: #00a105;
+}
+.btnW.red {
+  background-color: #bd1010;
+}
+.btnW.red:hover,
+.btnW.red:focus {
+  background-color: rgb(145, 0, 0);
+}
+.btnW.red:active {
+  background-color: #a10000;
+}
+.btnW.orange {
+  background-color: #bd7810;
+}
+.btnW.orange:hover,
+.btnW.orange:focus {
+  background-color: rgb(145, 80, 0);
+}
+.btnW.orange:active {
+  background-color: #a15b00;
+}
+.imgBtn{
+  background-color: transparent;
+  border: none;
+}
+.offcanvas-header .btn-close {
+  background-color: #2d2d58;
+}

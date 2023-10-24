@@ -1,0 +1,7 @@
+export { default as NavBar } from './NavBar'
+export { default as ProfileStats } from './ProfileStats'
+export { default as LiveChat } from './LiveChat'
+export { default as Footer } from './Footer'
+export { default as GameHistory } from './GameHistory'
+export { default as Header } from './Header'
+export { default as Games } from './Games'
